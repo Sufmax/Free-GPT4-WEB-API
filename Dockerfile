@@ -13,6 +13,6 @@ ENV PORT=5500
 EXPOSE "$PORT/tcp"
 
 #shell form necessary
-SHELL ["python3","FreeGPT4_Server.py"]
-ENTRYPOINT ["python3","FreeGPT4_Server.py"]
+SHELL ["python3","FreeGPT4_Server.py", "--enable-gui"]
+ENTRYPOINT ["python3","FreeGPT4_Server.py", "--enable-gui"]
 #CMD ["--cookie-file","/cookies.json"]
